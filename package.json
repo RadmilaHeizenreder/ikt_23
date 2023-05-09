@@ -1,5 +1,5 @@
 {
-  "name": "IKT-PWA-01",
+  "name": "Insta",
   "version": "1.0.0",
   "description": "Grundgerüst einer PWA",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.0"
+  },
+  "dependencies": {
+    "ngrok": "^4.3.3"
   }
 }

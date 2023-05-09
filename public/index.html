@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>IKT-PWA</title>
+  <title>Insta</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet"
@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="/src/css/app.css">
   <link rel="stylesheet" href="/src/css/feed.css">
   <link rel="manifest" href="/manifest.json">
-
 </head>
 <body>
 
@@ -80,7 +79,13 @@
       <div class="page-content">
         <h5 class="text-center mdl-color-text--primary">HTW-Insta</h5>
         <div id="shared-moments"></div>
+        <div>
+          <button id="install" style="display:none;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+            Installieren
+          </button>
+        </div>
       </div>
+      
       <div class="floating-button">
         <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
                 id="share-image-button">
@@ -94,15 +99,9 @@
     </main>
   </div>
 </div>
+
 <script defer src="/src/js/material.min.js"></script>
 <script src="/src/js/app.js"></script>
 <script src="/src/js/feed.js"></script>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-    });
-  }
-</script>
 </body>
 </html>
