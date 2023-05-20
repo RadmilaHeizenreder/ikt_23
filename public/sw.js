@@ -3,6 +3,7 @@
 // `navigator` ist das Browser-Objekt
 // anstatt 'function ()' '() => ' verwenden. '=>' ist eine anonyme Funktion 
 // (https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Functions/Pfeilfunktionen)
+// test
 
 self.addEventListener('install', (event) => {
     console.log('[Service Worker] Installing Service Worker ...', event);
